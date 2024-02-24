@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Health",
+      "image": "https://i.ibb.co/19vKm1d/Health.png",
+      "title": "Clean water for children",
+      "description": "Experienced software engineer with expertise in web development."
+    },
+    {
+      "id": 2,
+      "name": "Education",
+      "image": "https://i.ibb.co/r78wn1P/Education.png",
+      "title": "Good education",
+      "description": "Data scientist specializing in machine learning and data analysis."
+    },
+    {
+      "id": 3,
+      "name": "Clothing",
+      "image" : "https://i.ibb.co/FJ3Mf3f/Rectangle-4287.png",
+      "title": "Used Clothing Drive",
+      "description": "Marketing professional with a proven track record in digital marketing."
+    },
+    {
+      "id": 4,
+      "name": "Food",
+      "image" : "https://i.ibb.co/nmMdD15/Food.png",
+      "title": "Better Food for Everyone",
+      "description": "Creative graphic designer with a passion for visual storytelling."
+    },
+    {
+      "id": 5,
+      "name": "Food",
+      "image" : "https://i.ibb.co/nmMdD15/Food.png",
+      "title": "Better Food for Everyone",
+      "description": "Financial analyst with expertise in financial modeling and forecasting."
+    },
+    {
+      "id": 6,
+      "name": "Clothing",
+      "image" : "https://i.ibb.co/FJ3Mf3f/Rectangle-4287.png",
+      "title": "Used Clothing Drive",
+      "description": "Human resources manager dedicated to fostering a positive work environment."
+    },
+    {
+      "id": 7,
+      "name": "Education",
+      "image": "https://i.ibb.co/r78wn1P/Education.png",
+      "title": "Good education",
+      "description": "Product manager focused on delivering innovative and customer-centric solutions."
+    },
+    {
+      "id": 8,
+      "name": "Health",
+      "image": "https://i.ibb.co/19vKm1d/Health.png",
+      "title": "Clean water for children",
+      "description": "User experience designer passionate about creating intuitive and user-friendly interfaces."
+    },
+    {
+      "id": 9,
+      "name": "Health",
+      "image": "https://i.ibb.co/19vKm1d/Health.png",
+      "title": "Clean water for children",
+      "description": "Sales representative with a strong track record of exceeding targets."
+    },
+    {
+      "id": 10,
+      "name": "Education",
+      "image": "https://i.ibb.co/r78wn1P/Education.png",
+      "title": "Good education",
+      "description": "Customer support specialist dedicated to providing excellent service and resolving issues."
+    },
+    {
+      "id": 11,
+      "name": "Clothing",
+      "image": "https://i.ibb.co/FJ3Mf3f/Rectangle-4287.png",
+      "title": "Used Clothing Drive",
+      "description": "Project manager with a history of successfully leading cross-functional teams."
+    },
+    {
+      "id": 12,
+      "name": "Food",
+      "image" : "https://i.ibb.co/nmMdD15/Food.png",
+      "title": "Better Food for Everyone",
+      "description": "Creative content writer skilled in producing engaging and informative content."
+    }
+  ]
+  
