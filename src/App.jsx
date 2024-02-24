@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { motion, useAnimation } from "framer-motion"
+// import { motion, useAnimation } from "framer-motion"
+import Cards from './Cards'
+import Sample from './Sample'
 
 
 function App() {
@@ -30,11 +32,11 @@ function App() {
     }
   }
 
-const control = useAnimation()
+// const control = useAnimation()
 
   return (
     <section>
-      <div id='box1' className='flex overflow-hidden border-2 justify-end'>
+      {/* <div id='box1' className='flex overflow-hidden border-2 justify-end'>
         <motion.div className='w-52 h-52 rounded-xl p-2  bg-blue-700'
         animate={{x:0, opacity : 1}}
         initial={{opacity: 0.1, x: 500}}
@@ -98,10 +100,15 @@ const control = useAnimation()
 
         </motion.div>
       </div>
-      <div>
-        <motion.div>
+      <div >
+        <motion.div className='my-10 w-52 h-52 rounded-xl p-2 bg-purple-600' animate={{translateX: 500}}>
           
         </motion.div>
+      </div> */}
+      <div>
+        {/* <Cards></Cards> */}
+        <Sample></Sample>
+
       </div>
     </section>
   )
