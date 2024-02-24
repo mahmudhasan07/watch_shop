@@ -7,17 +7,70 @@ import { motion } from "framer-motion"
 
 function App() {
 
+  const boxmotion = {
+    Start :{
+      x: 0,
+      scale : "1.5",
+      backgroundColor: "blue"
+    },
+    End :{
+      x: 1000,
+      scale : ".5",
+      backgroundColor : "green"
+    }
+  }
+
+  const handlebox4 = {
+    start : {
+      opacity:.1 , y:-70
+    }
+    ,
+    end :{
+      opacity:1 , y:0
+    }
+  }
 
   return (
     <section>
-      <div className='flex border-2 justify-center'>
-        <motion.div className='box'
-        animate={{x: "right", opacity : 1}}
-        initial={{opacity: 0.1}}
-        transition={{duration: 1,ease: "linear"}}
+      <div id='box1' className='flex overflow-hidden border-2 justify-end'>
+        <motion.div className='w-52 h-52 rounded-xl p-2  bg-blue-700'
+        animate={{x:0, opacity : 1}}
+        initial={{opacity: 0.1, x: 500}}
+        transition={{duration: 1.5, ease: "linear"}}
+      
         > 
         <h2>hello</h2>
         </motion.div>
+      </div>
+      <div id='box2' className=''>
+        <motion.div className='w-52 h-52 rounded-xl p-2  bg-green-700'
+        whileHover={{
+          scale : 1.1,
+          transition: {ease: "easeInOut"}
+        }}
+        whileTap={{scale: .9}}
+        drag={"x"}
+        > 
+        <h2>hello</h2>
+        </motion.div>
+      </div>
+      <div id='box3' className='my-5'>
+        <motion.div className='w-52 h-52 rounded-xl p-2 '
+        variants={boxmotion}
+        animate="End"
+        initial= "Start"
+        > 
+        <h2>hello</h2>
+        </motion.div>
+      </div>
+      <div id='box4' className='my-5 w-52 h-52 overflow-hidden flex justify-between rounded-xl p-2 bg-yellow-400'>
+        {
+          [1,2,3].map((element,idx)=>{
+           return <motion.li key={idx} variants={handlebox4} initial="start" animate="end" transition={{duration:(idx+1)*1, ease: "backOut"}}  className='h-6 w-10 my-2 text-black bg-white'>
+              {element}
+            </motion.li>
+          })
+        }
       </div>
     </section>
   )
