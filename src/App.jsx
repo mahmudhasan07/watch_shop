@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-// import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import Cards from './Cards'
 import Sample from './Sample'
 
@@ -32,7 +32,7 @@ function App() {
     }
   }
 
-// const control = useAnimation()
+const control = useAnimation()
 
   return (
     <section>
@@ -110,6 +110,9 @@ function App() {
         <Sample></Sample>
 
       </div>
+      {/* <div className='my-20'>
+        <Cards></Cards>
+      </div> */}
     </section>
   )
 }
