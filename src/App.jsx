@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { motion, useAnimation } from "framer-motion"
+import { motion, reverseEasing, useAnimation } from "framer-motion"
 import Cards from './Cards'
 import Sample from './Sample'
 
@@ -36,11 +36,12 @@ const control = useAnimation()
 
   return (
     <section>
-      {/* <div id='box1' className='flex overflow-hidden border-2 justify-end'>
+      <div id='box1' className='flex overflow-hidden border-2 justify-center'>
         <motion.div className='w-52 h-52 rounded-xl p-2  bg-blue-700'
-        animate={{x:0, opacity : 1}}
-        initial={{opacity: 0.1, x: 500}}
-        transition={{duration: 1.5, ease: "linear"}}
+        animate={{x:0, opacity : [0.8,1,0.8]}}
+        initial={{opacity: 0.5, x: 300}}
+        transition={{duration: 1, ease: "linear", repeatType:'mirror', repeat:Infinity}}
+        
       
         > 
         <h2>hello</h2>
@@ -104,7 +105,7 @@ const control = useAnimation()
         <motion.div className='my-10 w-52 h-52 rounded-xl p-2 bg-purple-600' animate={{translateX: 500}}>
           
         </motion.div>
-      </div> */}
+      </div>
       <div>
         {/* <Cards></Cards> */}
         <Sample></Sample>
