@@ -6,9 +6,7 @@ import "./Sample.css"
 const Sample = () => {
     const [hidden, setHidden] = useState(false)
     useEffect(()=>{
-        AOS.init({
-            
-        })
+        AOS.init({})
     },[])
     return (
         <section className='border-2 h-screen flex items-center justify-center'>

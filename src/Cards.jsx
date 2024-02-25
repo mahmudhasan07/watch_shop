@@ -54,7 +54,7 @@ const Card = ({ card, id }) => {
         <motion.div  className="card w-80 space-y-1 border-2 p-2" 
         initial={{ x: -(id * 2000), opacity: 0.1 }}
         animate ={{x: 0, opacity:1}}
-        transition={{}}
+        transition={{delay:1, duration: 2}}
         // onScroll={{animate}}
         
 >

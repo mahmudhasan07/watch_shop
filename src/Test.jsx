@@ -1,6 +1,6 @@
 
 import banner from "../public/watch_banner.png"
-import { motion, reverseEasing, useAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 // import "./Test.css"
 
 const Test = () => {
