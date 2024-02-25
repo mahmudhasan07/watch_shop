@@ -2,18 +2,28 @@
     /* opacity: 0;
     transition: 0.5s ; */
     background-color: green;
+    cursor: pointer;
+    width: fit-content;
+    transform: none;
+    padding: 5px;
     transition: all 5s;
 }
+.fade-left:focus{
+    transform: inherit;
+    transition: all 2s;
+    animation: border alternate 1s ease-in-out ;
+}
+@keyframes border {
+    0%{
+        width: fit-content;
+    }
+    100%{
+        width: fit-content;
+    }
+}
 
-#title:hover{
-    cursor: pointer;
-    /* transform: initial; */
-    transform: scale(1.5);
-    transition-duration: 5s ;
-    transition-delay: 2s;
-}
 #text{
-    transform: initial;
-    transition-duration: 5s;
-    transition-delay: 2s;
+    width: auto;
+    transition: all 2s;
 }
+

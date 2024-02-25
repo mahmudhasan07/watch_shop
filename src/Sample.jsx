@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import "./Sample.css"
 
 const Sample = () => {
-    const [hidden, setHidden] = useState("hidden")
+    const [hidden, setHidden] = useState(false)
     useEffect(()=>{
         AOS.init({
             
@@ -12,9 +12,14 @@ const Sample = () => {
     },[])
     return (
         <section className='border-2 h-screen flex items-center justify-center'>
-            <div id='div' className="fade-left  text-3xl w-fit h-fit text-center font-bold">
-                <h1 id='title' onClick={()=>setHidden("flex")}>Hello, World!</h1>
-                <p id='text' className={`${hidden} transition-all`} onClick={()=>setHidden("hidden")}>This content will fade in when scrolled into view.</p>
+            <div id='div' onClick={()=>setHidden(!hidden)} className="fade-left  text-3xl text-center font-bold">
+                <h1 id='title' >Hello, World!</h1>
+                {
+                    hidden == true ?
+                    <p id='text'>This content will fade in when scrolled into view.</p>
+                    :
+                    ""
+                }
             </div>
         </section>
     );
