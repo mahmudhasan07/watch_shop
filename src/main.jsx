@@ -7,11 +7,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Test from './Test.jsx';
+import Home from './Home.jsx';
 
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <Test></Test>
+    element : <Home></Home>
   }
 ])
 
@@ -19,7 +20,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 <RouterProvider router={router}>
   {/* <App></App> */}
-  <Test></Test>
+  {/* <Test></Test> */}
+  <Home></Home>
 </RouterProvider>
   </React.StrictMode>,
 )
