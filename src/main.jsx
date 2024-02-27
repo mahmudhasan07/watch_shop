@@ -13,7 +13,7 @@ import Slide from './Slide.jsx';
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <Test></Test>,
+    element : <Home></Home>,
     children:[
       {
         path : '/hello',
@@ -27,8 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 <RouterProvider router={router}>
   {/* <App></App> */}
-  <Test></Test>
-  {/* <Home></Home> */}
+  {/* <Test></Test> */}
+  <Home></Home>
 </RouterProvider>
   </React.StrictMode>,
 )
