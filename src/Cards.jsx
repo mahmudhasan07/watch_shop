@@ -72,7 +72,7 @@ const Card = ({ card, id }) => {
                 <h1 className="font-semibold">{card.description}</h1>
             </motion.div>
 
-            <dialog id="modal" className="w-96 h-fit mt-10 p-2">
+            <motion.dialog initial={{opacity:0, y:"250"}} animate={{opacity:1, y:0}} transition={{delay:.5, duration:2, ease:"easeIn"}} id="modal" className="w-96 h-fit mt-10 p-2">
                 <div>
                     <div className="flex justify-end">
                         <button onMouseEnter={handlemodal2} className="btn btn-primary">close</button>
@@ -82,7 +82,7 @@ const Card = ({ card, id }) => {
                     <h1 className="text-5xl font-extrabold ">Hello</h1>
                     <h1 className="text-5xl font-extrabold ">Hello</h1>
                 </div>
-            </dialog>
+            </motion.dialog>
         </>
     )
 }
