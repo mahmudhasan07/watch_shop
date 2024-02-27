@@ -14,7 +14,7 @@ import Cards from './Cards.jsx';
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <Cards></Cards>,
+    element : <Home></Home>,
     // children:[
     //   {
     //     path : '/hello',
@@ -29,8 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <RouterProvider router={router}>
   {/* <App></App> */}
   {/* <Test></Test> */}
-  {/* <Home></Home> */}
-  <Cards></Cards>
+  <Home></Home>
+  {/* <Cards></Cards> */}
 </RouterProvider>
   </React.StrictMode>,
 )
