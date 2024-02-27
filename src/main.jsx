@@ -8,11 +8,18 @@ import {
 } from "react-router-dom";
 import Test from './Test.jsx';
 import Home from './Home.jsx';
+import Slide from './Slide.jsx';
 
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <Home></Home>
+    element : <Test></Test>,
+    children:[
+      {
+        path : '/hello',
+        element : <Slide></Slide>
+      }
+    ]
   }
 ])
 
@@ -20,8 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 <RouterProvider router={router}>
   {/* <App></App> */}
-  {/* <Test></Test> */}
-  <Home></Home>
+  <Test></Test>
+  {/* <Home></Home> */}
 </RouterProvider>
   </React.StrictMode>,
 )
